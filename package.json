@@ -20,5 +20,10 @@
     "url": "git+https://github.com/SuleymanEfe/portfolio-website.git"
   },
   "author": "Suleyman Efe Celik",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.6.1",
+    "@types/react": "^18.0.15",
+    "typescript": "^4.7.4"
+  }
 }
