@@ -56,6 +56,8 @@ export default function Clock() {
 
   const onClickHandler = () => {
     navigator.clipboard.writeText(fullTime);
+
+    //TODO: Create a little pop-up on the clock that says "Copied to clipboard"
   };
   return (
     <StyledClock onClick={onClickHandler}>

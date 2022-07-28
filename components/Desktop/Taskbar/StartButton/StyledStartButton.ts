@@ -1,23 +1,21 @@
 import styled from "styled-components";
 
-const StyledClock = styled.div`
+const StyledStartButton = styled.button`
   display: flex;
 
   align-items: center;
+  text-align: center;
   justify-content: center;
 
   height: 100%;
-  width: 80px;
-  font-size: 0.9rem;
-  color: #fff;
-
-  margin-right: 1.5rem;
+  width: 50px;
+  margin-left: 1.5rem;
 
   transition: background 0.2s ease;
 
   &:hover {
     cursor: pointer;
-    background-color: rgba(183, 183, 183, 0.39);
+    background-color: rgba(195, 195, 195, 1);
   }
 
   -webkit-touch-callout: none; /* iOS Safari */
@@ -28,4 +26,4 @@ const StyledClock = styled.div`
   user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 `;
 
-export default StyledClock;
+export default StyledStartButton;

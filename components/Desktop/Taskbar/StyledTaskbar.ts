@@ -1,15 +1,24 @@
 import styled from "styled-components";
 
 const StyledTaskbar = styled.div`
-  background-color: #191919;
-  bottom: 0;
-  contain: size layout;
-  height: 30px;
-  left: 0;
+  display: flex;
   position: absolute;
-  right: 0;
+
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+
+  height: 30px;
   width: 100vw;
-  z-index: 1;
+
+  background-color: #191919;
+  contain: size layout;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 5;
 `;
 
 export default StyledTaskbar;

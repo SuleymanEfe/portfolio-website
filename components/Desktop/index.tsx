@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import StyledDesktop from "./StyledDesktop";
 import Taskbar from "./Taskbar";
 
