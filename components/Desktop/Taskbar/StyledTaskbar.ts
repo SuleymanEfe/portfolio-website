@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { TASKBAR_HEIGHT } from "utils/constants";
 
 const StyledTaskbar = styled.div`
   display: flex;
@@ -8,7 +9,7 @@ const StyledTaskbar = styled.div`
   text-align: center;
   justify-content: space-between;
 
-  height: 30px;
+  height: ${TASKBAR_HEIGHT}px;
   width: 100vw;
 
   background-color: #191919;
