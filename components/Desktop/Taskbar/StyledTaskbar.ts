@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 const StyledTaskbar = styled.div`
-  background-color: #000000;
+  background-color: #191919;
   bottom: 0;
   contain: size layout;
-  height: 35px;
+  height: 30px;
   left: 0;
   position: absolute;
   right: 0;
