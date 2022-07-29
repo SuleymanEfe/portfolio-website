@@ -19,13 +19,6 @@ const StyledClock = styled.div`
     cursor: pointer;
     background-color: rgba(183, 183, 183, 0.39);
   }
-
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 `;
 
 export default StyledClock;

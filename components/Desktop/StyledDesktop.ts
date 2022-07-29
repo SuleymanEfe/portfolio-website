@@ -15,8 +15,8 @@ const StyledDesktop = styled.main`
   contain: strict;
   height: 100%;
   inset: 0;
-  position: fixed;
   width: 100vw;
+  position: fixed;
 `;
 
 export default StyledDesktop;
