@@ -1,15 +1,12 @@
 import styled from "styled-components";
 
-const StyledClock = styled.div`
-  display: flex;
+const ClockString = styled.div`
+  width: 100%;
+  height: 100%;
 
+  display: flex;
   align-items: center;
   justify-content: center;
-
-  height: 100%;
-  width: 80px;
-  font-size: 0.8rem;
-  color: #fff;
 
   transition: background 0.2s ease;
 
@@ -19,4 +16,4 @@ const StyledClock = styled.div`
   }
 `;
 
-export default StyledClock;
+export default ClockString;

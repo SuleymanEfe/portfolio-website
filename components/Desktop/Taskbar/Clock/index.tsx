@@ -1,18 +1,25 @@
-import StyledClock from "./StyledClock";
-import useTime from "./useTime";
+import { useState, useRef } from "react";
+
+import useOutsideClickDetector from "hooks/useOutsideClickDetector";
+import StyledClockArea from "./StyledClockArea";
+import ClockString from "./ClockString";
+import ClockMenu from "./ClockMenu";
 
 export default function Clock() {
-  const timeString = useTime();
+  const ClockAreaRef = useRef<HTMLDivElement>(null);
 
-  const onClickHandler = () => {
-    console.log("Clicked to clock.");
-    //TODO: Open clock menu
-  };
+  const [isClockMenuOpen, setIsClockMenuOpen] = useState(false);
+
+  useOutsideClickDetector(ClockAreaRef, () => {
+    setIsClockMenuOpen(false);
+  });
+
   return (
     <>
-      <StyledClock onClick={onClickHandler}>
-        {timeString ? <span>{timeString}</span> : <></>}
-      </StyledClock>
+      <StyledClockArea ref={ClockAreaRef}>
+        <ClockString onClick={() => setIsClockMenuOpen(!isClockMenuOpen)} />
+        {isClockMenuOpen ? <ClockMenu /> : <></>}
+      </StyledClockArea>
     </>
   );
 }

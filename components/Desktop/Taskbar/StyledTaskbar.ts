@@ -12,7 +12,7 @@ const StyledTaskbar = styled.div`
   height: ${TASKBAR_HEIGHT}px;
   width: 100vw;
 
-  background-color: rgba(15, 15, 15, 0.7);
+  background-color: rgba(12, 12, 12, 0.9);
   contain: size layout;
 
   bottom: 0;

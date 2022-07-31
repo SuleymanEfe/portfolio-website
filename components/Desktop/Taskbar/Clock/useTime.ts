@@ -24,7 +24,7 @@ const useTime = () => {
     };
     handleTime();
 
-    const interval = setInterval(() => handleTime(), 1000);
+    const interval = setInterval(() => handleTime(), 17);
 
     return () => {
       clearInterval(interval);
