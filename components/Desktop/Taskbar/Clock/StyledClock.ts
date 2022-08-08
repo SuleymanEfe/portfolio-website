@@ -1,20 +1,18 @@
 import styled from "styled-components";
 
-const StyledStartButton = styled.button`
+const StyledClock = styled.div`
   display: flex;
 
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-
-  background-color: transparent;
   color: ${({ theme }) => theme.colors.text};
 
+  align-items: center;
+  justify-content: center;
+
   height: 100%;
-  width: ${({ theme }) => theme.sizes.taskbar.startButton.width};
+  width: ${({ theme }) => theme.sizes.taskbar.clock.width};
+  font-size: ${({ theme }) => theme.sizes.taskbar.clock.fontSize};
 
   &:hover {
-    cursor: pointer;
     background-color: ${({ theme }) => theme.colors.taskbar.hover};
   }
 
@@ -23,4 +21,4 @@ const StyledStartButton = styled.button`
   }
 `;
 
-export default StyledStartButton;
+export default StyledClock;

@@ -1,8 +1,8 @@
-import StyledClockArea from "./StyledClockArea";
-import useTime from "./useTime";
+import StyledClock from "./StyledClock";
+import useTime from "hooks/useTime";
 
 export default function Clock() {
   const timeString = useTime();
 
-  return <StyledClockArea>{timeString}</StyledClockArea>;
+  return <StyledClock>{timeString}</StyledClock>;
 }

@@ -7,11 +7,14 @@
   outline: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
-  -webkit-touch-callout: none;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none;
 
-  // font-family: "Roboto", "Arial", sans-serif;
-  // font-family: "Helvetica Neue", "Arial", sans-serif;
   font-family: "system-ui", "Arial", sans-serif;
 }
 
